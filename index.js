@@ -1,4 +1,4 @@
-let idade = 19
+let idade = 20
 let anoEvento=2022
 let mesEvento=12
 let diaEvento=28
@@ -12,6 +12,19 @@ let dataEvento = new Date(anoEvento, mesEvento-1, diaEvento) //Valor dos mês -1
 
 if (dataAtual < dataEvento && qtdParticipantes < limitePart &&  idade > 18) {
     console.log(`Compra feita, a data do evento será: ${diaEvento}/${mesEvento}/${anoEvento}`)  
+    console.log("Lista de cadastrados")
+    console.log("----------------------------------------------------")
+    for (let indice = 0; indice < qtdParticipantes; indice++){
+        const listaParticipantes = nomeCadastrados[indice];
+        console.log(listaParticipantes)
+    }
+        console.log("----------------------------------------------------")
+        console.log("Lista de Palestrantes")
+        console.log("----------------------------------------------------")
+    for (let indice = 0; indice < qtdPalestrantes; indice++){
+        const listaPalestrantes = nomePalestrantes[indice];
+        console.log(listaPalestrantes);
+    }
 }else{      
         if (dataAtual > dataEvento){
             console.log(`Compra invalida, data do evento já ocorreu:${diaEvento}/${mesEvento}/${anoEvento} `)
@@ -23,16 +36,6 @@ if (dataAtual < dataEvento && qtdParticipantes < limitePart &&  idade > 18) {
                     console.log('Menores de idade não são permitidos no evento.')
                 }
     }
-    console.log("Lista de cadastrados")
-for (let indice = 0; indice < qtdParticipantes; indice++){
-    const listaParticipantes = nomeCadastrados[indice];
-    console.log(listaParticipantes)
-}
-    console.log("Lista de Palestrantes")
-for (let indice = 0; indice < qtdPalestrantes; indice++){
-    const listaPalestrantes = nomePalestrantes[indice];
-    console.log(listaPalestrantes);
-}
 
 
 

@@ -1,4 +1,4 @@
-let idade = 20
+let idade =20
 let anoEvento=2022
 let mesEvento=12
 let diaEvento=28
@@ -26,16 +26,16 @@ if (dataAtual < dataEvento && qtdParticipantes < limitePart &&  idade > 18) {
         console.log(listaPalestrantes);
     }
 }else{      
-        if (dataAtual > dataEvento){
-            console.log(`Compra invalida, data do evento já ocorreu:${diaEvento}/${mesEvento}/${anoEvento} `)
-        }
-            if (qtdParticipantes > limitePart){
-                console.log('O evento já está com limite máximo de pessoas.')
-            }
-                if(idade < 18){
-                    console.log('Menores de idade não são permitidos no evento.')
-                }
+    if (dataAtual > dataEvento){
+        console.log(`Compra invalida, data do evento já ocorreu:${diaEvento}/${mesEvento}/${anoEvento} `)
     }
+        if (qtdParticipantes > limitePart){
+                console.log('O evento já está com limite máximo de pessoas.')
+        }
+            if(idade < 18){
+                    console.log('Menores de idade não são permitidos no evento.')
+            }
+}
 
 
 
